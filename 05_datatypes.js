@@ -2,35 +2,60 @@
 
 // 7 types: String, Number, Boolean, null, Undefined, Symbol, BigInt
 
-const a = 100
-const b = 100.3
+// const a = 100
+// const b = 100.3
 
-const log = false
-const temp = null
-let mail
+// const log = false
+// const temp = null
+// let mail
 
-const Id = Symbol('123')
-const newId = Symbol('123')
+// const Id = Symbol('123')
+// const newId = Symbol('123')
 
-console.log(Id === newId);
+// console.log(Id === newId);
 
-const bigNum = 44446468517971335467913n // BigInt
+// const bigNum = 44446468517971335467913n // BigInt
 
-// Reference (Non-Primitive)
+// // Reference (Non-Primitive)
 
-// Array, Objects, Functions
+// // Array, Objects, Functions
 
-const heroes =["happy", "smiley", "blakey"];
+// const heroes =["happy", "smiley", "blakey"];
 
-let obj = {
-    name: "shivam",
-    age: 20,
+// let obj = {
+//     name: "shivam",
+//     age: 20,
+// }
+
+// function myFunction(){
+//     console.log("Hello World")
+// }
+
+// console.log(typeof bigNum)
+// console.log(typeof temp)
+// console.log(typeof myFunction)
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Memory: Stack (Primitive) and Heap (Non-Primitive)
+
+let num = "shivam"
+
+let newName = num
+newName = "raj"
+
+console.log(num)
+console.log(newName)
+
+let user = {
+    mail: "user@google.com",
+    upi: "user@ybl"
 }
 
-function myFunction(){
-    console.log("Hello World")
-}
+let userTwo = user
 
-console.log(typeof bigNum)
-console.log(typeof temp)
-console.log(typeof myFunction)
+userTwo.mail = "raj@google.com"
+
+console.log(user.mail)
+console.log(userTwo.mail)

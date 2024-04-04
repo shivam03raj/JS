@@ -1,0 +1,36 @@
+// Primitive
+
+// 7 types: String, Number, Boolean, null, Undefined, Symbol, BigInt
+
+const a = 100
+const b = 100.3
+
+const log = false
+const temp = null
+let mail
+
+const Id = Symbol('123')
+const newId = Symbol('123')
+
+console.log(Id === newId);
+
+const bigNum = 44446468517971335467913n // BigInt
+
+// Reference (Non-Primitive)
+
+// Array, Objects, Functions
+
+const heroes =["happy", "smiley", "blakey"];
+
+let obj = {
+    name: "shivam",
+    age: 20,
+}
+
+function myFunction(){
+    console.log("Hello World")
+}
+
+console.log(typeof bigNum)
+console.log(typeof temp)
+console.log(typeof myFunction)

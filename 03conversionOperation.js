@@ -28,3 +28,13 @@ let strnum = String(num)
 
 console.log(strnum)
 console.log(typeof strnum)
+let str1 = "hello"
+let str2 = " simran"
+
+let str3 = str1 + str2
+console.log(str3);
+
+console.log("1" + 2)
+console.log(1 + "2")
+console.log("1"+ 2 + 2)
+console.log(1+ 2 + "2")

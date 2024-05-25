@@ -1,6 +1,6 @@
 // Primitive
 
-// 7 types: String, Number, Boolean, null, Undefined, Symbol, BigInt
+// 7 types: String, Number, Boolean, null, Undefined, Symbol, BigInt     --------> These are all based on call by value
 
 // const a = 100
 // const b = 100.3
@@ -14,11 +14,11 @@
 
 // console.log(Id === newId);
 
-// const bigNum = 44446468517971335467913n // BigInt
+// const bigNum = 44446468517971335467913n // BigInt  [The n at the end of the number is used to denote that the number is a BigInt]
 
-// // Reference (Non-Primitive)
+// Reference (Non-Primitive)
 
-// // Array, Objects, Functions
+// Array, Objects, Functions
 
 // const heroes =["happy", "smiley", "blakey"];
 
@@ -27,8 +27,8 @@
 //     age: 20,
 // }
 
-// function myFunction(){
-//     console.log("Hello World")
+// const myFunction = function(){
+//     console.log("Hello World");
 // }
 
 // console.log(typeof bigNum)

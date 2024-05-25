@@ -40,6 +40,8 @@
 
 // Memory: Stack (Primitive) and Heap (Non-Primitive)
 
+// In stack memory type, the call by value method is used, meaning the real memory remains unaffected.
+
 let num = "shivam"
 
 let newName = num
@@ -47,6 +49,8 @@ newName = "raj"
 
 console.log(num)
 console.log(newName)
+
+// Whereas, in heap memory type, the call by reference method is used, meaning the actual memory is affected.
 
 let user = {
     mail: "user@google.com",

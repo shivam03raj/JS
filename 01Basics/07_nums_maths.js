@@ -17,7 +17,7 @@ console.log(num.toLocaleString('en-IN')); // Gives the number a number system. I
 //-------------------Maths---------------------------
 
 console.log(Math) // Math is an object
-console.log(Math.abs(-4)); // Abs means absolute it changes any negative number to positive.
+console.log(Math.abs(-4)); // abs means absolute it changes any negative number to positive.
 console.log(Math.round(4.6));
 console.log(Math.ceil(4.6)); // It rounds the number to the top
 console.log(Math.floor(4.6)); // It rounds the number to the botttom

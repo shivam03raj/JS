@@ -58,10 +58,39 @@ const users = [
 
 users[1].email  // Any value from Database comes as an array of object
 
-console.log(tinderUser);
+// console.log(tinderUser);
 
-console.log(Object.keys(tinderUser)); // The datatype of the output value is array.
-console.log(Object.values(tinderUser));
-console.log(Object.entries(tinderUser)); // The datatype of the output value is an array. And each of its element is also an array.
+// console.log(Object.keys(tinderUser)); // The datatype of the output value is array.
+// console.log(Object.values(tinderUser));
+// console.log(Object.entries(tinderUser)); // The datatype of the output value is an array. And each of its element is also an array.
 
-console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+// console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+
+// Destructuring----> Destructuring is a convenient way of extracting multiple values from arrays or objects and assigning them to variables. This syntax can greatly simplify your code, making it more readable and concise.
+
+const course = {
+    coursename: "JS in Hindi",
+    price: "999",
+    courseInstructor: "Shivam"
+}
+
+// To get any specific values from the object course we can use many syntax like course.price, course["price"]. But, we have the destructuring method to help us write concise code.
+
+const {courseInstructor} = course // This is one method of destructuring.
+const {courseInstructore: instructor} = course // This is another method.
+
+console.log(courseInstructor);
+
+// API can be found in object structure and these objects have no names assigned to them, or as an array of objects.
+
+// {
+//     "name": "Shivam",
+//     "coursename": "JS in Hindi",
+//     "price": "free"
+// }
+
+[
+    {},
+    {},
+    {}
+]

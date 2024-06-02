@@ -38,15 +38,59 @@ function sayMyName(){
 // console.log("Result: ", result);
 
 // function userLogIn(username = "sam"){ This line means that the function cannot have undefined value, if we don't give any value during execution then it will automatically take "sam" as input unless we override it during execution.
-function userLogIn(username){
-    // if(!username){ This willl give the same output as below code
-    if(username === undefined){
-        console.log("Please enter a username")
-        return
-    }
-    return `${username} just logged in`
-}
+// function userLogIn(username){
+//     // if(!username){ This willl give the same output as below code
+//     if(username === undefined){
+//         console.log("Please enter a username")
+//         return
+//     }
+//     return `${username} just logged in`;
+// }
 
 // console.log(userLogIn("Shivam"));
-console.log(userLogIn()); // This will return unndefined
-console.log(userLogIn()); 
+// console.log(userLogIn()); // This will return undefined when no value is given and no initial condition is given as well.
+// console.log(userLogIn()); 
+
+
+
+// function calculateCartPrice(num1){
+//     return num1
+// }
+
+// console.log(calculateCartPrice(200))
+
+// function calculateCartPrice(...num1){
+//     return num1
+// }
+
+// console.log(calculateCartPrice(200, 400, 600, 2000))
+
+// function calculateCartPrice(val1, val2, ...num1){
+//     return num1
+// }
+
+// console.log(calculateCartPrice(200, 400, 600, 2000))
+
+const user = {
+    username: "Shivam",
+    price: 199
+}
+
+function handleObject(anyObject){
+    console.log(`Username is ${anyObject.username} and price is ${anyObject.price}`)
+}
+
+// handleObject(user)
+handleObject({
+    username: "Sam",
+    price: 399
+})
+
+const myNewArray = [200, 400, 500, 900]
+
+function returnSecondValue(getArray){
+    return getArray[1]
+}
+
+// console.log(returnSecondValue(myNewArray));
+console.log(returnSecondValue([200, 400, 500, 900]));

@@ -4,11 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM Learning</title>
+    <style>
+        .bg-black{
+            background-color: #212121;
+            color: #fff;
+        }
+    </style>
 </head>
-<body>
-    <div class="bg-black">
-        <h1 class="heading">DOM learning on Chai aur Code</h1>
+<body  class="bg-black">
+    <div>
+        <h1 id="title" class="heading">DOM learning on Chai aur Code <span style = "display: none;">Text test</span> </h1>
+        <h2>Lorem ipsum dolor sit amet consectetur adipisicing.</h2>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <h2>Lorem, ipsum.</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, cumque?</p>
+
+        <!-- <input type="password" name="" id=""> -->
+
+        <ul>
+            <li class="list-item">One</li>
+            <li class="list-item">Two</li>
+            <li class="list-item">Three</li>
+            <li class="list-item">Four</li>
+        </ul>
+
     </div>
 </body>
 </html>
@@ -18,3 +37,139 @@
 document.getElementById('IDName')
 
 document.getElementById('IDName').innerHTML = "<h1>Chai aur Code</h1>"
+
+document.getElementById('title')
+document.getElementById('title').id
+'title'
+document.getElementById('title').className
+'heading'
+
+document.getElementById('title').getAttribute
+ƒ getAttribute() { [native code] }
+document.getElementById('title').getAttribute('id')
+'title'
+document.getElementById('title').getAttribute('class')
+'heading'
+
+document.getElementById('title').setAttribute('class', 'test heading')
+
+const title = document.getElementById('title')
+undefined
+title
+
+
+title.style.backgroundColor = '#212121'
+'#212121'
+title.style.padding = '20px'
+'20px'
+title.style.borderRadius = '20px'
+'20px'
+
+
+title.textContent
+'DOM learning on Chai aur Code Text test '
+title.innerHTML
+<!-- 'DOM learning on Chai aur Code <span style="display: none;">Text test</span> ' -->
+title.innerText
+'DOM learning on Chai aur Code'
+
+
+document.getElementsByClassName('heading')
+HTMLCollection [h1#title.heading, title: h1#title.heading]
+
+document.querySelector('h2')
+<!-- <h2>​Lorem ipsum dolor sit amet consectetur adipisicing.​</h2>​ -->
+document.querySelector('#title')
+<!-- <h1 id=​"title" class=​"heading">​…​</h1>​ -->
+document.querySelector('.heading')
+<!-- <h1 id=​"title" class=​"heading">​…​</h1>​ -->
+
+document.querySelector('input[type="password"]')
+<!-- <input type=​"password" name id fdprocessedid=​"c1b2f">​ -->
+
+
+document.querySelector('p:first-child')
+
+
+document.querySelector('ul')
+<!-- <ul>​…​</ul>​ -->
+const myul = document.querySelector('ul')
+undefined
+myul.querySelector('li')
+<!-- <li>​…​</li>​ -->
+const turnGreen = myul.querySelector('li')
+undefined
+turnGreen.style.backgroundColor = 'green'
+'green'
+turnGreen.style.padding = '30px'
+'30px'
+turnGreen.innerText
+'One'
+turnGreen.innerText = 'five'
+'five'
+
+
+
+document.querySelectorAll
+ƒ querySelectorAll() { [native code] }
+        document.querySelectorAll('li')
+NodeList(3) [li, li, li]
+       const tempLiList =  document.querySelectorAll('li')
+undefined
+tempLiList
+NodeList(3) [li, li, li]0: li1: li2: lilength: 3[[Prototype]]: NodeListentries: ƒ entries()forEach: ƒ forEach()length: 1name: "forEach"arguments: (...)caller: (...)[[Prototype]]: ƒ ()apply: ƒ apply()arguments: (...)bind: ƒ bind()call: ƒ call()caller: (...)constructor: ƒ Function()length: 0name: ""toString: ƒ toString()Symbol(Symbol.hasInstance): ƒ [Symbol.hasInstance]()get arguments: ƒ ()set arguments: ƒ ()get caller: ƒ ()set caller: ƒ ()[[FunctionLocation]]: [[Prototype]]: Object[[Scopes]]: Scopes[0][[Scopes]]: Scopes[0]item: ƒ item()keys: ƒ keys()length: (...)values: ƒ values()constructor: ƒ NodeList()Symbol(Symbol.iterator): ƒ values()Symbol(Symbol.toStringTag): "NodeList"get length: ƒ length()[[Prototype]]: Object
+tempLiList.style.color = 'green'
+VM5139:1 Uncaught TypeError: Cannot set properties of undefined (setting 'color')
+    at <anonymous>:1:24
+(anonymous) @ VM5139:1Understand this error
+tempLiList[0].style.color = 'green'
+'green'
+
+
+
+
+const myH1 = document.querySelectorAll('h1')
+undefined
+myH1
+NodeList(2) [h1#title.heading, h1]0: h1#title.heading1: h1length: 2[[Prototype]]: NodeListentries: ƒ entries()forEach: ƒ forEach()item: ƒ item()keys: ƒ keys()length: (...)values: ƒ values()constructor: ƒ NodeList()Symbol(Symbol.iterator): ƒ values()Symbol(Symbol.toStringTag): "NodeList"get length: ƒ length()[[Prototype]]: Object
+myH1.style.color = 'green'
+VM5391:1 Uncaught TypeError: Cannot set properties of undefined (setting 'color')
+    at <anonymous>:1:18
+(anonymous) @ VM5391:1Understand this error
+myH1[0].style.color = 'green'
+'green'
+
+
+
+const tempLiList =  document.querySelectorAll('li')
+undefined
+tempLiList
+NodeList(3) [li, li, li]
+tempLiList.forEach(function (l) {
+    l.style.background = 'green'
+})
+undefined
+
+
+
+document.getElementsByClassName('list-item')
+HTMLCollection(4) [li.list-item, li.list-item, li.list-item, li.list-item]0: li.list-item1: li.list-item2: li.list-item3: li.list-itemlength: 4[[Prototype]]: HTMLCollection
+const tempClassList = document.getElementsByClassName('list-item')
+undefined
+tempClassList
+HTMLCollection(4) [li.list-item, li.list-item, li.list-item, li.list-item]
+tempClassList.forEach(function (item){
+    console.log(item)
+})
+
+
+const tempClassList = document.getElementsByClassName('list-item')
+undefined
+Arr
+VM6723:1 Uncaught ReferenceError: Arr is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM6723:1Understand this error
+Array.from(tempClassList)
+
+
+

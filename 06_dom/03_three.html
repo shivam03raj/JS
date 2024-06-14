@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai aur <Code></Code></title>
+</head>
+<style>
+    .body{
+        background-color: #212121;
+        color: #fff;
+    }
+</style>
+<body class="body">
+    
+</body>
+<script>
+    const div = document.createElement('div') // How to create a new element in DOM
+    console.log(div);
+    div.className = "main"
+    div.id = Math.round(Math.random() * 10 + 1)
+    div.setAttribute("title", "generated title")
+    div.style.backgroundColor = 'orange'
+    div.style.padding = "12px"
+    div.style.borderRadius = "20px"
+    div.style.alignItems = 'centre'
+    div.style.boxSizing = 'border-box'
+    div.style.justifyContent = 'space-evenly'
+    // div.innerText = "Chai aur Code" ---> This is one way to add content in our DOM elemrnt
+    const addText = document.createTextNode("Chai aur Code") // This is another way of adding DOM element. It creates the text we want
+    div.appendChild(addText) // This adds the created text to the DOM
+
+    document.body.appendChild(div)
+
+</script>
+</html>

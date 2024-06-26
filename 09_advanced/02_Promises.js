@@ -96,3 +96,7 @@ fetch('https://jsonplaceholder.typicode.com/users')
 .then((data) => {
     console.log(data);
 })
+.catch((error) => console.log(error))
+
+// promise.all
+// yes this is also available, kuch reading aap b kro.
